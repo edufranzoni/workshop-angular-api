@@ -27,6 +27,13 @@ namespace LojaVirtual.Api.Catalogo
         }
 
         [EnableCors]
+        [HttpPost("produtos")]
+        public ActionResult CadastrarProduto(CriarProdutoDto produto)
+        { 
+            return Ok();
+        }
+
+        [EnableCors]
         [HttpGet("produtos")]
         public ActionResult<ProdutoDto[]> GetProdutos()
         {
