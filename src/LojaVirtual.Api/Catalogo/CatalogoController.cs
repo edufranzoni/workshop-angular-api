@@ -30,7 +30,7 @@ namespace LojaVirtual.Api.Catalogo
         [HttpPost("produtos")]
         public ActionResult CadastrarProduto(CriarProdutoDto produto)
         { 
-            return Ok();
+            return Ok("sucesso");
         }
 
         [EnableCors]

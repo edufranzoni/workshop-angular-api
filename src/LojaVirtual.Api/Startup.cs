@@ -31,7 +31,7 @@ namespace LojaVirtual.Api
                 options.AddDefaultPolicy(
                     builder =>
                     {
-                        builder.AllowAnyOrigin();
+                        builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
                         //builder.WithOrigins("http://localhost:4200");
                     });
             });
